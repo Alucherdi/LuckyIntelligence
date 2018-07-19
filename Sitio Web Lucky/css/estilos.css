@@ -1,0 +1,110 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: #E6E6E6;
+}
+
+header, .main, footer{
+	width: 100%;
+	/*margin: 10px auto;*/
+}
+
+header{
+	background: #FFFFFF;
+	overflow: hidden;
+}
+
+header div{
+	display: inline-block;
+	float: left;
+}
+
+header nav ul{
+	list-style: none;
+}
+
+header nav ul li{
+	float: right;
+	padding: 30px 10px;
+	border-right: 0.5px solid #F2F2F2;
+	border-collapse: collapse;
+}
+
+header nav ul li a{
+	font-size: 20px;
+	padding: 15px 20px;
+	display: block;
+	color: #4D4D4D;
+	text-decoration: none;
+
+}
+
+header nav ul li a:hover{
+	background: #F8F6F6;
+}
+
+
+/*--Banners--*/
+.somos, .proyectos, .aliados, .contacto{
+	text-align: center;
+	color: #FFFFFF;
+	padding: 30px;
+}
+
+.somos{
+	background: #FF606E;
+}
+
+.proyectos{
+	background: #00D18A;
+}
+
+.aliados{
+	background: #FFC256;
+}
+
+.contacto{
+	background: #5387C4;
+}
+
+article{
+	width: 70%;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+h2{
+	font-size: 40px;
+}
+
+h3{
+	font-size: 40px;
+	text-align: left;
+}
+
+.description, .mision, .vision{
+	padding: 20px;
+	font-size: 25px;
+}
+
+.row{
+	padding: 36px 0px 0px 36px;
+}
+
+.aliado, .project{
+	width: 400px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 50px;
+}
+
+footer{
+	background: #000000;
+	color: #FFF;
+	clear: both;
+	padding: 10px 0px;
+	text-align: center;
+}
