@@ -4,6 +4,20 @@
 	<title>Lucky Intelligence</title>
 	<link rel="shortcut icon" type="image/x-icon" href="Image/Lucky.ico">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+
+	<script type="text/javascript" charset="utf-8">
+  		$(window).load(function() {
+    		$('.flexslider').flexslider({
+    			animation: "fade",
+    			animationLoop: true, 
+    			touch: true,
+    			slideshowSpeed: 3000,
+    		});
+  		});
+	</script>
+
 </head>
 
 <body>
@@ -23,15 +37,25 @@
 		</nav>
 	</header>
 
-	<section class="main">
-		
-	</section>
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="Image/Slide/Gamership.png">
+			</li>
+
+			<li>
+				<img src="Image/Slide/SpaceGaming.png">
+			</li>
+
+			<li>
+				<img src="Image/Slide/GameDev.jpg">
+			</li>
+		</ul>
+	</div>
 
 	<footer>
 		<p>Lucky Intelligence - 2018</p>
 	</footer>
-
-
 </body>
 
 </html>
