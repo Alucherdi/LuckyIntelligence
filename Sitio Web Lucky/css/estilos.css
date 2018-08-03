@@ -5,8 +5,14 @@
 }
 
 body{
+	font-family: 'Open Sans', sans-serif;
 	background: #E6E6E6;
 }
+
+h1, h2, h3{
+	font-family: 'Roboto', sans-serif;
+}
+
 
 header, .main, footer{
 	width: 100%;
@@ -19,7 +25,7 @@ header{
 	z-index: 999;
 }
 
-header div{
+header div{+
 	display: inline-block;
 	float: left;
 }
@@ -65,21 +71,29 @@ footer img{
 	width: 15%;
 }
 
+.info div{
+	position: relative;
+}
+
 .info img{
 	width: 100%;
 	
 }
 
+.info div section{
+	width: 50%;
+	height: 100%;
+}
+
 .description{
     position: absolute;
-    left: 45%;
-    top: 25%;
+    left: 50%;
+    top: 20%;
     color: #FFF;
-    text-align: left;
 }
 
 .description h1{
-	font-size: 3.5em;
+	font-size: 3em;
 }
 
 .description p{
@@ -91,18 +105,18 @@ h2{
 	font-size: 2.5em;
 }
 
-.cliente, .project{
+.cliente, .project, .aliado{
 	display: inline-block;
 	vertical-align: middle;
 	width: 300px;
 	padding: 50px;
 }
 
-.cliente img{
+.cliente img, .aliado img{
 	opacity: 0.5;
 }
 
-.cliente img:hover{
+.cliente img:hover, .aliado img:hover{
 	opacity: 1;
 }
 
@@ -110,11 +124,11 @@ h2{
 	background: #5387C4;
 }
 
-.info2 h2{
+.info2 h2, .proyectos h2{
 	color: #FFF;
 }
 
-.textinfo2{
+.textinfo2, .textinfo3{
 	color: #FFF;
 	width: 50%;
 	font-size: 1.5em;
@@ -131,14 +145,36 @@ h2{
 	position: relative;
 }
 
-.textinfo3{
+.box{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.box2{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+
+.box2 section{
 	position: absolute;
 	top: 40%;
-	left: 10%;
-	color: #FFF;
-	width: 85%;
+}
+
+.box img{
+	width: 100%;
+}
+
+.servicio{
+	font-size: 2em;
+}
+
+.servicioinfo{
 	font-size: 1.5em;
-	text-align: left;
+}
+
+.proyectos{
+	background: #FF606E;
 }
 
 .project{
@@ -154,7 +190,7 @@ h2{
 
 .project p{
 	font-size: 1.25em;
-	color: #585858;
+	color: #FFF;
 }
 
 .events{
@@ -165,9 +201,20 @@ h2{
 }
 
 .events p{
-	font-size: 1.25em;
+	font-size: 1.5em;
 	color: #585858;
 } 
+
+iframe{
+	width: 75%;
+	max-width: 1500px;
+	height: 900px;
+	border: none;
+	overflow: hidden;
+	display: block;
+	margin: 0px 0px;
+	padding: 0px;
+}
 
 .team{
 	background: #00D18A;
@@ -175,6 +222,31 @@ h2{
 
 .team h2{
 	color: #FFF;
+}
+
+.textboxteam{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+
+.textboxteam img{
+	width: 100%;
+}
+
+.infoteam{
+	position: absolute;
+	top: 10%;
+	color: #000;
+	text-align: center;
+}
+
+.infoteam h3{
+	font-size: 1.5em;
+}
+
+.infoteam p{
+	font-size: 1.25em;
 }
 
 .contacto{
@@ -185,17 +257,7 @@ h2{
 	width: 100%;
 }
 
-.contacto div{
-	position: relative;
-}
-
-.contacto div section{
-	position: absolute;
-	left: 50%;
-	top: 15%;
-}
-
-/*--SLider--*/
+/*--Slider--*/
 .flexslider{
 	width: 90%;
 	max-width: 1500px;
@@ -360,3 +422,6 @@ input[type="submit"]:hover{
 	font-style: normal;
 }﻿
 
+
+	
+	
