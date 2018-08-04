@@ -52,66 +52,76 @@
 <body>
 	<header>
 		<div>
-			<a href="index.html"><img src="Image/LuckyIntelligence.png" width="100" alt="Logotipo LuckyIntelligence"></a>
+			<a href="#home"><img src="Image/LuckyIntelligence.png" width="100" alt="Logotipo LuckyIntelligence"></a>
 		</div>
 
 		<nav>
 			<ul>
 				<li><a href="#contacto">Contacto</a></li>
-				<li><a href="#proyectos">Proyectos</a></li>
-				<li><a href="#somos">Sobre Nosotros</a></li>
+				<li><a href="#aliados">Aliados</a></li>
+				<li><a href="#equipo">Equipo</a></li>
+				<li><a href="#eventos">Eventos</a></li>
+				<li><a href="#productos">Prodcutos</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#nosotros">Sobre Nosotros</a></li>
+				<li><a href="#clientes">Clientes</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<section class="main">
-		<br><br><br><br><br>
 
-		<section class="info">
-			<div>
-				<img src="Image/startup.png">
-				<section class="description">
-					<h1>
+		<!--HOME-->
+		<section id="home" class="info">
+			<div class="imagecontainer">
+				<center>
+					<img src="Image/startup.png">
+					<section class="textinfo">
+						<h1>
 						Somos innovación, somos gamificación.
-					</h1>
+						</h1>
 
-					<br><br>
+						<br>
 
-					<p  class="textinfo">
-						Diseñamos, desarrollamos e implementamos soluciones para entregar productos de alto valor a clientes y empresas.
-					</p>
-				</section>
+						<p >
+							Diseñamos, desarrollamos e implementamos soluciones para entregar productos de alto valor a clientes y empresas.
+						</p>
+					</section>
+				</center>
 			</div>
 		</section>
 
-		<br><br><br><br>
+		<!--CLIENTES-->
+		<section id="clientes">
+			<br><br><br><br><br>
+			<div class="clientes">
+				<center>
+					<h2>¡Nuestros Clientes nos respaldan!</h2>
 
-		<div class="clientes">
+					<div class="cliente">
+						<a target="_blank" href="https://www.gamersarena.com.mx/"><img src="Image/clientes/arena.png" width="100%"></a>
+					</div>
+
+					<div class="cliente">
+						<a target="_blank" href="https://gamelta.mx"><img src="Image/clientes/gamelta.png" width="100%"></a>
+					</div>
+
+					<div class="cliente">
+						<a target="_blank" href="https://gameplanet.com"><img src="Image/clientes/gameplanet.png" width="100%"></a>
+					</div>
+
+					<div class="cliente">
+						<a target="_blank" href="http://promogames.com.mx"><img src="Image/clientes/promogames.png" width="50%"></a>
+					</div>		
+				</center>
+			</div>
+			<br><br><br><br>
+		</section>
+
+		<!--NOSOTROS-->
+		<section id="nosotros" class="info2">
+			<br><br><br><br><br>
 			<center>
-				<h2>¡Nuestros Clientes nos respaldan!</h2>
-
-				<div class="cliente">
-					<a target="_blank" href="https://www.gamersarena.com.mx/"><img src="Image/clientes/arena.png" width="100%"></a>
-				</div>
-
-				<div class="cliente">
-					<a target="_blank" href="https://gamelta.mx"><img src="Image/clientes/gamelta.png" width="100%"></a>
-				</div>
-
-				<div class="cliente">
-					<a target="_blank" href="https://gameplanet.com"><img src="Image/clientes/gameplanet.png" width="100%"></a>
-				</div>
-
-				<div class="cliente">
-					<a target="_blank" href="http://promogames.com.mx"><img src="Image/clientes/promogames.png" width="50%"></a>
-				</div>		
-			</center>
-		</div>
-
-		<section id="somos" class="info2">
-			<center>
-				<br><br><br><br>
-
 				<h2>Somos un startup con grandes metas y sueños</h2>
 
 				<br><br>
@@ -135,40 +145,43 @@
 						Nos enfocamos más en la experiencia de usuario al utilizar mecánicas agradables y fáciles de entender, utilizando los videojuegos como plataforma.
 					</p>
 				</div>
-
-				<br><br><br><br>
 			</center>
+			<br><br><br><br>
 		</section>
 
-		<div>
+		<!--SERVICIOS-->
+		<section id="servicios">
+			<br><br><br><br><br>
+			<div>
+				<center>
+					<h2>¡Nuestros Servicios!</h2>
+					<br>
+
+					<map name="luckymap">
+						<area shape="poly" coords="333,16,193,262,474,261" onclick="gamificacion()">
+	    				<area shape="poly" coords="142,342,3,590,286,590" onclick="consultoriati()">
+	    				<area shape="poly" coords="521,343,381,591,665,591" onclick="productosdigitales()">
+					</map>
+
+					<div class="box">
+						<img src="Image/lucky.png" usemap="#luckymap">
+					</div>
+
+					<div class="box2" style="width: 500px; height: 500px">
+						<section>
+							<h3 id="servicio" class="servicio"></h3>
+							<br>
+							<p id="servicioinfo" class="servicioinfo"></p>
+						</section>
+					</div>
+				</center>
+			</div>
 			<br><br><br><br>
-			<center>
-				<h2>¡Nuestros Servicios!</h2>
-				<br>
+		</section>
 
-				<map name="luckymap">
-					<area shape="poly" coords="333,16,193,262,474,261" onclick="gamificacion()">
-    				<area shape="poly" coords="142,342,3,590,286,590" onclick="consultoriati()">
-    				<area shape="poly" coords="521,343,381,591,665,591" onclick="productosdigitales()">
-				</map>
-
-				<div class="box">
-					<img src="Image/lucky.png" usemap="#luckymap">
-				</div>
-
-				<div class="box2" style="width: 500px; height: 500px">
-					<section>
-						<h3 id="servicio" class="servicio"></h3>
-						<br>
-						<p id="servicioinfo" class="servicioinfo"></p>
-					</section>
-				</div>
-			</center>
-			<br><br>
-		</div>
-
-		<section id="proyectos" class="proyectos">
-			<br><br><br><br>
+		<!--PROYECTOS-->
+		<section id="productos" class="proyectos">
+			<br><br><br><br><br>
 			<center>
 				<h2>¡Conoce nuestros productos!</h2>
 
@@ -197,227 +210,221 @@
 			<br><br><br><br>
 		</section>
 
-		<div>
-			<br><br><br><br>
+		<!--EVENTOS-->
+		<section id="eventos">
+			<br><br><br><br><br>
+			<div>
+				<center>
+					<h2>Eventos</h2>
+
+					<div class="events">
+						<section>
+							<p>
+								Acompañanos el 30 y 31 de Agosto en la GameDev XPerience, Facultad de Ingeniería, Ciudad Un iversitaria, CDMX.
+							</p>
+						</section>
+					</div>
+
+					<div>
+						<iframe src="eventos/eventos.html"></iframe>
+					</div>
+				</center>
+			</div>
+		</section>
+		
+		<!--EQUIPO-->
+		<section id="equipo" class="team">
+			<br><br><br><br><br>
 			<center>
-				<h2>Eventos</h2>
-
-				<div class="events">
-					<section>
-						<p>
-							Acompañanos el 30 y 31 de Agosto en la GameDev XPerience, Facultad de Ingeniería, Ciudad Un iversitaria, CDMX.
-						</p>
-					</section>
-				</div>
-
-				<div>
-					<iframe src="eventos/eventos.html"></iframe>
-				</div>
-			</center>
-		</div>
-
-		<section class="team">
-			<br><br><br><br>
-			<center>
-
 				<h2>Nuestra familia</h2>
 
 				<div class="flexslider">
 					<ul class="slides">
 						<li>
-							<img src="Image/team/robertos.png">
+							<div>
+								<img src="Image/team/robertos.png">
+							</div>
+							
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
-									<div>
-										<h3>Roberto Suárez</h3>
-										<br>
-										<p>
-											Lucky Executtive Officer - LEO
-											<br><br>
-											<i>"La vida es un juego y gana ¡quien se divierte más! Enjoy the ride"</i>
-										</p>
-									</div>
+									<h3>Roberto Suárez</h3>
+									<br>
+									<p>
+										Lucky Executtive Officer - LEO
+										<br><br>
+										<i>"La vida es un juego y gana ¡quien se divierte más! Enjoy the ride"</i>
+									</p>
 								</section>
 							</div>
 						</li>
 
 						<li>
-							<img src="Image/team/mariog.png">
+							<div>
+								<img src="Image/team/mariog.png">
+							</div>
+							
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
-									<div>
-										<h3>Mario González</h3>
-										<br>
-										<p>
-											Director de Business Intelligence
-											<br><br>
-											<i>"Lorem ipsum dolor sit amet consectetur adipiscing elit, felis nec suspendisse ante ac dictum."</i>
-										</p>
-									<div>
+									<h3>Mario González</h3>
+									<br>
+									<p>
+										Director de Business Intelligence
+									</p>
 								</section>
 							</div>
 						</li>
 
 						<li>
-							<img src="Image/team/guillermoy.png">
+							<div>
+								<img src="Image/team/guillermoy.png">
+							</div>
+							
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
-									<div>
-										<h3>Guillermo Yaniz</h3>
-										<br>
-										<p>
-											Director de Alianzas y Convenios
-											<br><br>
-											<i>"Lorem ipsum dolor sit amet consectetur adipiscing elit, felis nec suspendisse ante ac dictum."</i>
-										</p>
-									<div>
+									<h3>Guillermo Yaniz</h3>
+									<br>
+									<p>
+										Director de Alianzas y Convenios
+									</p>
 								</section>
 							</div>
 						</li>
 
 						<li>
-							<img src="Image/team/guillermoh.png">
+							<div>
+								<img src="Image/team/guillermoh.png">
+							</div>
+							
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
-									<div>
-										<h3>Guillermo Herrera</h3>
-										<br>
-										<p>
-											Director de TI e Infraestructura
-											<br><br>
-											<i>"Lorem ipsum dolor sit amet consectetur adipiscing elit, felis nec suspendisse ante ac dictum."</i>
-										</p>
-									<div>
+									<h3>Guillermo Herrera</h3>
+									<br>
+									<p>
+										Director de TI e Infraestructura
+									</p>
 								</section>
 							</div>
 						</li>
 
 						<li>
-							<img src="Image/team/siluetas_hombre.jpg">
+							<div>
+								<img src="Image/team/siluetas_hombre.jpg">
+							</div>
+							
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
-									<div>
-										<h3>Marcelo Pérez</h3>
-										<br>
-										<p>
-											Director de Finanzas
-											<br><br>
-											<i>"Lorem ipsum dolor sit amet consectetur adipiscing elit, felis nec suspendisse ante ac dictum."</i>
-										</p>
-									<div>
+									<h3>Marcelo Pérez</h3>
+									<br>
+									<p>
+										Director de Finanzas
+									</p>
 								</section>
 							</div>
 						</li>
 
 						<li>
-							<img src="Image/team/siluetas_hombre.jpg">
+							<div>
+								<img src="Image/team/siluetas_hombre.jpg">
+							</div>
+							
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
-									<div>
-										<h3>Dylan Reyna</h3>
-										<br>
-										<p>
-											Director Legal
-											<br><br>
-											<i>"Lorem ipsum dolor sit amet consectetur adipiscing elit, felis nec suspendisse ante ac dictum."</i>
-										</p>
-									<div>
+									<h3>Dylan Reyna</h3>
+									<br>
+									<p>
+										Director Legal
+									</p>
 								</section>
 							</div>
 						</li>
 
 						<li>
-							<img src="Image/team/siluetas_hombre.jpg">
+							<div>
+								<img src="Image/team/siluetas_hombre.jpg">
+							</div>
+							
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
-									<div>
-										<h3>Mario Reyes</h3>
-										<br>
-										<p>
-											Director de Comunidades e Influencers
-											<br><br>
-											<i>"Lorem ipsum dolor sit amet consectetur adipiscing elit, felis nec suspendisse ante ac dictum."</i>
-										</p>
-									<div>
+									<h3>Mario Reyes</h3>
+									<br>
+									<p>
+										Director de Comunidades e Influencers
+									</p>
 								</section>
 							</div>
 						</li>
 
 						<li>
-							<img src="Image/team/siluetas_hombre.jpg">
+							<div>
+								<img src="Image/team/siluetas_hombre.jpg">
+							</div>
+							
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
-									<div>
-										<h3>Asiel Posada</h3>
-										<br>
-										<p>
-											Director de Diseño y Arte
-											<br><br>
-											<i>"Lorem ipsum dolor sit amet consectetur adipiscing elit, felis nec suspendisse ante ac dictum."</i>
-										</p>
-									<div>
+									<h3>Asiel Posada</h3>
+									<br>
+									<p>
+										Director de Diseño y Arte
+									</p>
 								</section>
 							</div>
 						</li>
 
 						<li>
-							<img src="Image/team/siluetas_mujer.jpg">
+							<div>
+								<img src="Image/team/siluetas_mujer.jpg">
+							</div>
+							
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
-									<div>
-										<h3>Itzel Diaz</h3>
-										<br>
-										<p>
-											Consultora de Estrategia en Redes Sociales
-											<br><br>
-											<i>"Lorem ipsum dolor sit amet consectetur adipiscing elit, felis nec suspendisse ante ac dictum."</i>
-										</p>
-									<div>
+									<h3>Itzel Diaz</h3>
+									<br>
+									<p>
+										Consultora de Estrategia en Redes Sociales
+									</p>
 								</section>
 							</div>
 						</li>
 
 						<li>
-							<img src="Image/team/ivanr.png">
+							<div>
+								<img src="Image/team/ivanr.png">
+							</div>
+							
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
-									<div>
-										<h3>Ivan Rosales</h3>
-										<br>
-										<p>
-											Programador Senior
-											<br><br>
-											<i>"Tú creas tus pensamientos, tus pensamientos crean tus ideas y tus ideas crean tu realidad."</i>
-										</p>
-									<div>
+									<h3>Ivan Rosales</h3>
+									<br>
+									<p>
+										Programador Senior
+									</p>
 								</section>
 							</div>
 						</li>
 
 						<li>
-							<img src="Image/team/siluetas_mujer.jpg">
+							<div>
+								<img src="Image/team/siluetas_mujer.jpg">
+							</div>
+							
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
-									<div>
-										<h3>Erika Martinez</h3>
-										<br>
-										<p>
-											Especialista de Diseño
-											<br><br>
-											<i>"Lorem ipsum dolor sit amet consectetur adipiscing elit, felis nec suspendisse ante ac dictum."</i>
-										</p>
-									<div>
+									<h3>Erika Martinez</h3>
+									<br>
+									<p>
+										Especialista de Diseño
+									</p>
 								</section>
 							</div>
 						</li>
@@ -425,15 +432,13 @@
 						<li>
 							<img src="Image/team/siluetas_mujer.jpg">
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
 									<div>
 										<h3>Mildred García</h3>
 										<br>
 										<p>
 											Especialista de Diseño
-											<br><br>
-											<i>"Lorem ipsum dolor sit amet consectetur adipiscing elit, felis nec suspendisse ante ac dictum."</i>
 										</p>
 									<div>
 								</section>
@@ -441,118 +446,109 @@
 						</li>
 
 						<li>
-							<img src="Image/team/siluetas_hombre.jpg">
+							<div>
+								<img src="Image/team/siluetas_hombre.jpg">
+							</div>
+							
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
-									<div>
-										<h3>Armando Cruz</h3>
-										<br>
-										<p>
-											Programador Junior
-											<br><br>
-											<i>"Lorem ipsum dolor sit amet consectetur adipiscing elit, felis nec suspendisse ante ac dictum."</i>
-										</p>
-									<div>
+									<h3>Armando Cruz</h3>
+									<br>
+									<p>
+										Programador Junior
+									</p>
 								</section>
 							</div>
 						</li>
 
 						<li>
-							<img src="Image/team/siluetas_hombre.jpg">
+							<div>
+								<img src="Image/team/siluetas_hombre.jpg">
+							</div>
+							
 							<div class="textboxteam">
-								<img src="Image/yellowbox.png" width="100%">
+								<img src="Image/yellowbox.png">
 								<section class="infoteam">
-									<div>
-										<h3>Alexis Contreras</h3>
-										<br>
-										<p>
-											Programador Junior
-											<br><br>
-											<i>"Lorem ipsum dolor sit amet consectetur adipiscing elit, felis nec suspendisse ante ac dictum."</i>
-										</p>
-									<div>
+									<h3>Alexis Contreras</h3>
+									<br>
+									<p>
+										Programador Junior
+									</p>
 								</section>
 							</div>
 						</li>
 					</ul>
 				</div>
-
 			</center>
 			<br><br><br><br>
 		</section>
 
-		<br><br>
+		<!--ALIADOS-->
+		<section id="aliados">
+			<br><br><br><br><br>
+			<div class="aliados">
+				<center>
+					<h2>¡Aliados y Compañeros!</h2>
 
-		<div class="aliados">
-			<center>
-				<h2>¡Aliados y Compañeros!</h2>
+					<div class="aliado">
+						<img class="wai" src="Image/aliados/wai.png" width="100%">
+					</div>
 
-				<div class="aliado">
-					<img class="wai" src="Image/aliados/wai.png" width="100%">
-				</div>
+					<div class="aliado">
+						<a target="_blank" href="https://www.igenetiics.com/"><img src="Image/aliados/igenetiics.png" width="100%"></a>
+					</div>
 
-				<div class="aliado">
-					<a target="_blank" href="https://www.igenetiics.com/"><img src="Image/aliados/igenetiics.png" width="100%"></a>
-				</div>
+					<div class="aliado">
+						<img src="Image/aliados/rocket9.png" width="100%">
+					</div>		
+				</center>
+			</div>
+		</section>
 
-				<div class="aliado">
-					<img src="Image/aliados/rocket9.png" width="100%">
-				</div>		
-			</center>
-		</div>
-
-		<br><br>
-
+		<!--CONTACTO-->
 		<section id="contacto" class="contacto">
-			<img src="Image/contacto.jpg">
+			<img class="contactimage" src="Image/contacto.jpg">
 	
-			<center>
-				<section>
-					<form class="formulario" id="contact" method="post" action="enviar.php">
-						<input type="text" placeholder="Nombre" maxlength="10" id="nombre" required="required" name="nombre">
+			
+			<div>
+				<center>
+					<br><br>
+					<h2>Ponte en Contacto con Nosotros</h2>
+					<br><br>
 
-						<input type="email" placeholder="Correo" id="correo" required="required" name="email">
+					<div class="contactboxmail">
+						<img src="Image/email.png">
+					</div>
 
-						<textarea id="mensaje" placeholder="Escribe tu mensaje..." maxlength="500" id="mensaje" required="required" name="mensaje"></textarea>
+					<div class="contactboxmail">
+						<p>
+							contacto@luckyintelligence.com
+						</p>
+					</div>
 
-						<input type="submit">
-					</form>
-				</section>
-			</center>	
+					<br><br><br><br><br><br>
+					<h2>Siguenos en Facebook</h2>
+					<br><br>
+
+					<div class="contactboxfb">
+						<a target="_blank" href="https://www.facebook.com/LuckyIntelligence"><img src="Image/fb.png"></a>
+					</div>
+
+					<div class="contactboxfb">
+						<p>
+								@Lucky Intelligence
+						</p>
+					</div>
+				</center>
+				<br><br><br><br>
+			</div>
 		</section>
 
 	</section>
 
-	<br>
-
 	<footer>
-		<div>
-			<center>
-				<img src="Image/email.png">
-				<section>
-					<p>
-						contacto@luckyintelligence.com
-					</p>
-				</section>
-			</center>
-		</div>
-
-		<div>
-			<center>
-				<a target="_blank" href="https://www.facebook.com/LuckyIntelligence"><img src="Image/fb.png"></a>
-				<section>
-					<p>
-						Lucky Intelligence
-					</p>
-			</section>
-			</center>
-		</div>
-
-		<br><br><br><br>
-		<div>
-			<img src="Image/LuckyIntelligence.png" width="100">
-		</div>		
+		<p>Lucky Intelligence - 2018</p>
 	</footer>
 
 </body>

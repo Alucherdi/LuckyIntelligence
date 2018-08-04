@@ -7,25 +7,32 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	background: #E6E6E6;
+	padding-top: 100px;
 }
 
 h1, h2, h3{
 	font-family: 'Roboto', sans-serif;
 }
 
+h2{
+	font-size: 2.5em;
+}
 
 header, .main, footer{
 	width: 100%;
 }
 
 header{
+	height: 100px;
+	left: 0;
+	top: 0;
 	background: #FFFFFF;
 	overflow: hidden;
 	position: fixed;
 	z-index: 999;
 }
 
-header div{+
+header div{
 	display: inline-block;
 	float: left;
 }
@@ -36,18 +43,17 @@ header nav ul{
 
 header nav ul li{
 	float: right;
-	padding: 30px 10px;
+	padding: 25px 10px;
 	border-right: 0.5px solid #F2F2F2;
 	border-collapse: collapse;
 }
 
 header nav ul li a{
-	font-size: 20px;
+	font-size: 1em;
 	padding: 15px 20px;
 	display: block;
 	color: #4D4D4D;
 	text-decoration: none;
-
 }
 
 header nav ul li a:hover{
@@ -62,50 +68,34 @@ footer{
 	text-align: center;
 }
 
-footer div{;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-footer img{
-	width: 15%;
-}
-
-.info div{
+/*--Seccion Home--*/
+.imagecontainer{
 	position: relative;
 }
-
-.info img{
-	width: 100%;
-	
+.imagecontainer img{
+	width: 90%;
 }
 
-.info div section{
-	width: 55%;
-	height: 100%;
-}
-
-.description{
-    position: absolute;
+.textinfo{
+	position: absolute;
+	top: 25%;
     left: 40%;
-    top: 20%;
+    width: 50%;
     color: #FFF;
+    text-align: left;
 }
 
-.description h1{
-	font-size: 2.75em;
-}
-
-.description p{
-	font-size: 1.75em;
-	width: 100%;
-}
-
-h2{
+.textinfo h1{
 	font-size: 2.5em;
 }
 
-.cliente, .project, .aliado{
+.textinfo p{
+	font-size: 1.5em;
+	width: 100%;
+}
+/*--Seccion Home--*/
+
+.cliente, .aliado{
 	display: inline-block;
 	vertical-align: middle;
 	width: 300px;
@@ -124,7 +114,7 @@ h2{
 	background: #5387C4;
 }
 
-.info2 h2, .proyectos h2{
+.info2 h2, .proyectos h2, .team h2{
 	color: #FFF;
 }
 
@@ -220,25 +210,19 @@ iframe{
 	background: #00D18A;
 }
 
-.team h2{
-	color: #FFF;
-}
-
 .textboxteam{
 	display: inline-block;
 	vertical-align: middle;
 	position: relative;
 }
 
-.textboxteam img{
-	width: 100%;
-}
-
 .infoteam{
 	position: absolute;
 	top: 10%;
+	left: 5%;
 	color: #000;
 	text-align: center;
+	width: 90%;
 }
 
 .infoteam h3{
@@ -253,9 +237,34 @@ iframe{
 	width: 100%;
 }
 
-.contacto img{
+.contactimage{
 	width: 100%;
 }
+
+.contactboxmail{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.contactboxfb{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.contactboxmail p, .contactboxfb p{
+	font-size: 1.1em;
+}
+
+.contactboxmail img{
+	width: 5%;
+}
+
+.contactboxfb img{
+	width: 2.5%;
+}
+
 
 /*--Slider--*/
 .flexslider{
