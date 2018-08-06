@@ -141,6 +141,8 @@ footer{
 }
 
 .box2{
+	width: 500px; 
+	height: 500px;
 	display: inline-block;
 	vertical-align: middle;
 	position: relative;

@@ -39,12 +39,6 @@
 			document.getElementById("servicioinfo").innerHTML = "Generamos diferentes tipos de productos y servicios que sean amigables con el usuario; desde una app hasta un sitio web.";
 
     	}
-
-    	function nothing(){
-    		document.getElementById("servicio").innerHTML = "";
-			document.getElementById("servicioinfo").innerHTML = "";
-
-    	}
 	</script>
 
 </head>
@@ -61,7 +55,7 @@
 				<li><a href="#aliados">Aliados</a></li>
 				<li><a href="#equipo">Equipo</a></li>
 				<li><a href="#eventos">Eventos</a></li>
-				<li><a href="#productos">Prodcutos</a></li>
+				<li><a href="#productos">Productos</a></li>
 				<li><a href="#servicios">Servicios</a></li>
 				<li><a href="#nosotros">Sobre Nosotros</a></li>
 				<li><a href="#clientes">Clientes</a></li>
@@ -153,12 +147,12 @@
 		<section id="servicios">
 			<br><br><br><br><br>
 			<div>
-				<center>
+				<center class="centerservicios">
 					<h2>¡Nuestros Servicios!</h2>
 					<br>
 
 					<map name="luckymap">
-						<area shape="poly" coords="333,16,193,262,474,261" onclick="gamificacion()">
+						<area class="addDiv" shape="poly" coords="333,16,193,262,474,261" onclick="gamificacion()">
 	    				<area shape="poly" coords="142,342,3,590,286,590" onclick="consultoriati()">
 	    				<area shape="poly" coords="521,343,381,591,665,591" onclick="productosdigitales()">
 					</map>
@@ -167,7 +161,7 @@
 						<img src="Image/lucky.png" usemap="#luckymap">
 					</div>
 
-					<div class="box2" style="width: 500px; height: 500px">
+					<div class="box2">
 						<section>
 							<h3 id="servicio" class="servicio"></h3>
 							<br>
