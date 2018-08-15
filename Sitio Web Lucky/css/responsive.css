@@ -5,6 +5,11 @@
 		width: 100%;
 		height: 850px;
 	}
+
+	/*--Team--*/
+	.flexslider{
+		width: 84.5%;
+	}
 }
 
 @media screen and (max-width: 950px){
@@ -28,8 +33,8 @@
 
 	/*--Clientes--*/
 	.cliente, .aliado{
-		width: 25%;
-		padding: 25px;
+		width: 30%;
+		padding: 30px;
 	}
 
 	/*--Nosotros--*/
@@ -55,6 +60,11 @@
 	iframe{
 		width: 100%;
 		height: 550px;
+	}
+
+	/*--Team--*/
+	.flexslider{
+		width: 95%;
 	}
 }
 
@@ -119,9 +129,9 @@
 		height: 450px;
 	}
 
-	/*--Eventos--*/
+	/*--Team--*/
 	.flexslider{
-		width: 80%;
+		width: 90%;
 	}
 }
 
@@ -129,8 +139,9 @@
 @media screen and (max-width: 480px){
 	/*--Clientes--*/
 	.cliente, .aliado{
-		width: 30%;
+		width: 60%;
 		max-width: 200px;
+		padding: 25px;
 	}
 
 	h2{
@@ -152,6 +163,18 @@
 		height: 350px;
 	}
 
+	/*--Team--*/
+	.flexslider{
+		width: 60%;
+	}
+
+	.flexslider h3{
+		font-size: 1em;
+	}
+
+	.flexslider p{
+		font-size: 1em;
+	}
 }
 
 @media screen and (max-width: 340px){
@@ -180,17 +203,24 @@
 		height: 250px;
 	}
 
+	/*--Contacto--*/
+	.contactboxmail p, .contactboxfb p{
+		font-size: .9em;
+	}
+
 }
 /*--Fin Responsive--*/
 
 /*--Menu Responsive--*/
-@media screen and (max-width: 1450px){
+@media screen and (max-width: 1500px){
 	header nav{
 		width: 50%;
-		height: 100%;
+		height: 75%;
 		margin: 0;
 		left: -100%;
 		position: fixed;
+		overflow-y: scroll;
+  		-webkit-overflow-scrolling: touch;
 	}
 
 	header nav ul{
@@ -213,6 +243,7 @@
 		width: 100%;
 		background: #FFF;
 		font-size: 25px;
+		padding: 30px;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
@@ -229,6 +260,8 @@
 	.menu_bar span{
 		float: right;
 		font-size: 40px;
+		margin-top: -17.5px;
+		margin-right: -40px;
 	}
 }
 /*--Fin Menu Responsive--*/
